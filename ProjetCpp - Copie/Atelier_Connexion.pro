@@ -4,9 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql network multimedia multimediawidgets axcontainer
+QT       += core gui sql printsupport
 QT       += core gui charts
-QT       += printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -27,18 +26,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-    logement.cpp \
+    cadmin.cpp \
         main.cpp \
         mainwindow.cpp \
     connection.cpp \
-    smtp.cpp
+    qrcodegen.cpp \
+    voyageur.cpp
 
 HEADERS += \
-    logement.h \
+    cadmin.h \
         mainwindow.h \
     connection.h \
-    smtp.h \
-    webaxwidget.h
+    qrcodegen.hpp \
+    voyageur.h
 
 FORMS += \
         mainwindow.ui
